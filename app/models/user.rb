@@ -25,3 +25,5 @@ class User < ApplicationRecord
         puts"You have successfully saved a user"
     end
 end
+
+
