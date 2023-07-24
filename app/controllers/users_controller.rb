@@ -65,4 +65,9 @@ class UsersController < ApplicationController
         end
     end
 
+    def show
+      @user = User.find(params[:id])
+      @comments = @user.comments
+    end
+
 end

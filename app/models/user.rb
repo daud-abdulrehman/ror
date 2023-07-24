@@ -1,6 +1,8 @@
 class User < ApplicationRecord
     validates :name, presence: true
     validate :unique_name, on: :create
+    has_many :comments
+
 
     private
 
